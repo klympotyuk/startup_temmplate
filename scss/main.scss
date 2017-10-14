@@ -3,7 +3,6 @@
     padding: 0px;
 }
 @import 'fonts';
-
 /* header */
 header{
     background-image: url(../img/headbg.jpg);
@@ -105,6 +104,10 @@ header{
     background-color: rgb(150, 120, 168);
     &:hover{
         cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        .download-btn__txt{
+            color: rgb(150, 120, 168);
+        }
     }
     .download-btn__txt{
         font-family: Roboto L;
@@ -233,6 +236,109 @@ header{
                     font-family: Roboto bold;
                 } 
             }            
+        }
+    }
+}
+/* slider */
+.pSay{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    .pSay__title{
+        font-family: Roboto L;
+        font-size: 30px;
+        color: rgb(162,162,162);
+        margin-top: 77px;
+        span{
+            font-family: Roboto B;
+            color: rgb(38,38,38);
+        }
+    }
+    .pSay__slider{
+        margin-top: 50px;
+        align-items: center;
+        width: 90%;
+        .comment{
+            display: flex;
+            align-items: center;
+            flex-direction: column;          
+            &__text{
+                height: 70px;
+                width: 475px;
+                background-color: rgb(247,247,247);
+                padding: 52px 33px;                
+                p{
+                    font-family: Raleway BL;
+                    color: rgb(38,38,38);
+                    font-size: 20px;
+                    text-align: left;
+                }
+            }
+            &__autor{
+                margin: 40px;
+                display: flex;
+                align-items: center;
+                p{
+                    padding-left: 14px;
+                    font-family: Roboto L;
+                    color: rgb(38,38,38);
+                    font-size: 20px;
+                }                
+            }
+        }
+    }
+}
+/* footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(33,41,52);
+    width: 100%;
+    .foot_title{
+        margin-left: 37px;
+        font-family: Carrois;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    .foot_items{        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        a{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: Raleway M;
+            font-size: 11px;
+            text-decoration: none;
+            margin: 0px 14px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .foot_contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a{
+            color: rgb(255, 255, 255);
+            text-align: left;
+            font-family: Raleway M;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 20px 40px;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 }
