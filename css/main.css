@@ -156,7 +156,6 @@ header button:hover {
   font-family: Raleway SB;
   margin-top: 34px;
 }
-
 .download-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,25 +173,22 @@ header button:hover {
   border: solid 1px white;
   border-radius: 18px;
   background-color: #9678a8;
+  color: white;
 }
 .download-btn:hover {
   cursor: pointer;
   background-color: white;
-}
-.download-btn:hover .download-btn__txt {
   color: #9678a8;
 }
-.download-btn .download-btn__txt {
+.download-btn__txt {
   font-family: Roboto L;
   font-size: 16px;
-  color: white;
   margin-left: 16px;
 }
 
 /* weDo */
 .weDo {
   width: 100%;
-  height: 550px;
   background-image: url(../img/weDobg.jpg);
   background-repeat: no-repeat;
   background-size: 54%;
@@ -224,6 +220,7 @@ header button:hover {
 }
 .weDo div button {
   margin-top: 90px;
+  margin-bottom: 50px;
   border: solid 1px #33c5f6;
   background-color: white;
   border-radius: 19px;
@@ -296,14 +293,16 @@ header button:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.joinUs__white img {
+.joinUs__white .main_img {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   top: 101px;
 }
 .joinUs__white .iPhone {
-  margin-left: -156px;
-  margin-bottom: -24px;
+  position: relative;
+  z-index: 2;
+  margin-left: -160px;
+  margin-bottom: -122px;
 }
 .joinUs__blue {
   background-color: #688ebe;
@@ -370,48 +369,55 @@ header button:hover {
           flex-direction: column;
   text-align: center;
 }
-.pSay .pSay__title {
+.pSay__title {
   font-family: Roboto L;
   font-size: 30px;
   color: #a2a2a2;
   margin-top: 77px;
 }
-.pSay .pSay__title span {
+.pSay__title span {
   font-family: Roboto B;
   color: #262626;
 }
-.pSay .pSay__slider {
+.pSay__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
 }
-.pSay .pSay__slider .comment {
+.pSay__slider .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.pSay .pSay__slider .comment__text {
+.pSay__slider .comment__text {
   height: 70px;
   width: 475px;
   background-color: #f7f7f7;
   padding: 52px 33px;
+  margin: 0px auto;
 }
-.pSay .pSay__slider .comment__text p {
+.pSay__slider .comment__text p {
   font-family: Raleway BL;
   color: #262626;
   font-size: 20px;
   text-align: left;
 }
-.pSay .pSay__slider .comment__autor {
+.pSay__slider .comment__autor {
   margin: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,8 +425,11 @@ header button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.pSay .pSay__slider .comment__autor p {
+.pSay__slider .comment__autor p {
   padding-left: 14px;
   font-family: Roboto L;
   color: #262626;
@@ -501,4 +510,246 @@ footer .foot_contacts a {
 }
 footer .foot_contacts a:hover {
   cursor: pointer;
+}
+
+@media (min-width: 1040px) and (max-width: 1140px) {
+  .weDo {
+    background-size: 75%;
+  }
+}
+@media (min-width: 825px) and (max-width: 1040px) {
+  header {
+    background-size: auto;
+  }
+
+  .weDo {
+    background-size: 75%;
+  }
+
+  .howWork div {
+    margin: 30px 5px 30px 5px;
+  }
+}
+@media (min-width: 650px) and (max-width: 825px) {
+  header {
+    background-size: auto;
+    height: 600px;
+  }
+  header h2 {
+    margin-top: 96px;
+    font-size: 66px;
+  }
+
+  .download-btn {
+    margin-top: 28px;
+  }
+
+  .weDo {
+    background-size: auto;
+  }
+
+  .howWork div {
+    margin: 25px 5px 25px 5px;
+  }
+
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .foot_title {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  footer .foot_items a {
+    margin: 7px 14px;
+  }
+  footer .foot_contacts {
+    margin: 14px 40px;
+  }
+}
+@media (min-width: 555px) and (max-width: 650px) {
+  header {
+    background-size: auto;
+    height: 500px;
+  }
+  header h2 {
+    margin-top: 96px;
+    font-size: 50px;
+  }
+
+  .download-btn {
+    margin-top: 28px;
+  }
+
+  .weDo {
+    background-size: auto;
+  }
+
+  .howWork div {
+    margin: 25px 5px 25px 5px;
+  }
+
+  .joinUs__white .main_img {
+    width: 80%;
+  }
+  .joinUs__white .iPhone {
+    margin-left: -125px;
+    width: 20%;
+  }
+
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .foot_title {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  footer .foot_items a {
+    margin: 7px 14px;
+  }
+  footer .foot_contacts {
+    margin: 14px 40px;
+  }
+}
+@media (min-width: 510px) and (max-width: 555px) {
+  header {
+    background-size: auto;
+    height: 500px;
+  }
+  header div h1 {
+    font-size: 20px;
+  }
+  header div nav .main-nav__item a {
+    font-size: 7px;
+  }
+  header h2 {
+    margin-top: 96px;
+    font-size: 50px;
+  }
+
+  .download_1p {
+    text-align: center;
+  }
+  .download-btn {
+    margin-top: 28px;
+  }
+
+  .weDo {
+    background-size: auto;
+  }
+
+  .howWork div {
+    margin: 25px 5px 25px 5px;
+  }
+
+  .joinUs__white .main_img {
+    width: 80%;
+  }
+  .joinUs__white .iPhone {
+    margin-left: -125px;
+    width: 20%;
+  }
+  .joinUs__blue .joinUs__blue-items p {
+    margin: 30px 30px;
+  }
+
+  .pSay__slider .comment__text {
+    height: 40px;
+    width: 430px;
+  }
+  .pSay__slider .comment__text p {
+    font-size: 15px;
+  }
+
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .foot_title {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  footer .foot_items a {
+    margin: 7px 14px;
+  }
+  footer .foot_contacts {
+    margin: 14px 40px;
+  }
+}
+@media (min-width: 318px) and (max-width: 510px) {
+  header {
+    background-size: auto;
+    height: 500px;
+  }
+  header div h1 {
+    font-size: 20px;
+  }
+  header div nav {
+    display: none;
+  }
+  header h2 {
+    margin-top: 96px;
+    font-size: 33px;
+  }
+
+  .download_1p {
+    font-size: 13px;
+    text-align: center;
+  }
+  .download-btn {
+    margin-top: 28px;
+  }
+
+  .weDo {
+    background-size: auto;
+  }
+  .weDo div {
+    width: 70%;
+  }
+
+  .howWork div {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .joinUs__white .main_img {
+    width: 80%;
+  }
+  .joinUs__white .iPhone {
+    margin-left: -65px;
+    width: 20%;
+  }
+  .joinUs__blue .joinUs__blue-items p {
+    margin: 30px 30px;
+  }
+
+  .pSay__slider {
+    width: 75%;
+  }
+  .pSay__slider .comment__text {
+    height: 40px;
+    width: 170px;
+  }
+  .pSay__slider .comment__text p {
+    font-size: 12px;
+  }
+
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .foot_title {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  footer .foot_items a {
+    margin: 7px 14px;
+  }
+  footer .foot_contacts {
+    margin: 14px 40px;
+  }
 }

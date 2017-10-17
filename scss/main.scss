@@ -90,36 +90,33 @@ header{
         font-size: 17px;
         font-family: Raleway SB;
         margin-top: 34px;
-    }    
-}
-.download-btn{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 45px;
-    width: 210px;
-    height: 40px;
-    border: solid 1px rgb(255, 255, 255);
-    border-radius: 18px;
-    background-color: rgb(150, 120, 168);
-    &:hover{
-        cursor: pointer;
-        background-color: rgb(255, 255, 255);
-        .download-btn__txt{
-            color: rgb(150, 120, 168);
-        }
     }
-    .download-btn__txt{
-        font-family: Roboto L;
-        font-size: 16px;
+    &-btn{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 45px;
+        width: 210px;
+        height: 40px;
+        border: solid 1px rgb(255, 255, 255);
+        border-radius: 18px;
+        background-color: rgb(150, 120, 168);
         color: rgb(255, 255, 255);
-        margin-left: 16px;
-    }
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+            color: rgb(150, 120, 168);            
+        }
+        &__txt{
+            font-family: Roboto L;
+            font-size: 16px;            
+            margin-left: 16px;            
+        }
+    }    
 }
 /* weDo */
 .weDo{
     width: 100%;
-    height: 550px;
     background-image: url(../img/weDobg.jpg);
     background-repeat: no-repeat;
     background-size: 54%;
@@ -149,6 +146,7 @@ header{
         }
         button{
             margin-top: 90px;
+            margin-bottom: 50px;
             border: solid 1px rgb(51, 197, 246);
             background-color: rgb(255, 255, 255);
             border-radius: 19px;
@@ -199,14 +197,16 @@ header{
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        img{
+        .main_img{
             position: relative;
-            z-index: 2;
-            top: 101px;            
+            z-index: 1;
+            top: 101px;                        
         }
         .iPhone{
-            margin-left: -156px;
-            margin-bottom: -24px;
+            position: relative;
+            z-index: 2;
+            margin-left: -160px;
+            margin-bottom: -122px;
         }
     }
     &__blue{
@@ -248,7 +248,7 @@ header{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    .pSay__title{
+    &__title{
         font-family: Roboto L;
         font-size: 30px;
         color: rgb(162,162,162);
@@ -258,19 +258,22 @@ header{
             color: rgb(38,38,38);
         }
     }
-    .pSay__slider{
+    &__slider{
+        display: flex;
         margin-top: 50px;
         align-items: center;
         width: 90%;
         .comment{
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-direction: column;          
             &__text{
                 height: 70px;
                 width: 475px;
                 background-color: rgb(247,247,247);
-                padding: 52px 33px;                
+                padding: 52px 33px;
+                margin: 0px auto;                
                 p{
                     font-family: Raleway BL;
                     color: rgb(38,38,38);
@@ -282,6 +285,7 @@ header{
                 margin: 40px;
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 p{
                     padding-left: 14px;
                     font-family: Roboto L;
@@ -342,3 +346,4 @@ footer{
         }
     }
 }
+@import 'media';

@@ -1,0 +1,276 @@
+@media (min-width: 1040px) and (max-width: 1140px){
+    .weDo{
+        background-size: 75%;
+    }
+}
+@media (min-width: 825px) and (max-width: 1040px){
+    header{
+        background-size: auto;
+    }
+    .weDo{
+        background-size: 75%;
+    }
+    .howWork{
+        div{
+            margin: 30px 5px 30px 5px;
+        }
+    }
+}
+@media (min-width: 650px) and (max-width: 825px){
+    header{
+        background-size: auto;
+        height: 600px;
+        h2{
+            margin-top: 96px;
+            font-size: 66px;
+        }
+    }
+    .download{
+        &-btn{
+            margin-top: 28px;
+        }
+    }
+    .weDo{
+        background-size: auto;
+    }
+    .howWork{
+        div{
+            margin: 25px 5px 25px 5px;
+        }
+    }
+    footer{
+        justify-content: center;
+        .foot_title{
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+        .foot_items{
+            a{
+                margin: 7px 14px;
+            }
+        }
+        .foot_contacts{
+            margin: 14px 40px;
+        }
+    }
+}
+@media (min-width: 555px) and (max-width: 650px){
+    header{
+        background-size: auto;
+        height: 500px;
+        h2{
+            margin-top: 96px;
+            font-size: 50px;
+        }
+    }
+    .download{
+        &-btn{
+            margin-top: 28px;
+        }
+    }
+    .weDo{
+        background-size: auto;
+    }
+    .howWork{
+        div{
+            margin: 25px 5px 25px 5px;
+        }
+    }
+    .joinUs{
+        &__white{
+            .main_img{
+                width: 80%;
+            }
+            .iPhone{
+                margin-left: -125px;
+                width: 20%;
+            }
+        }
+    }
+    footer{
+        justify-content: center;
+        .foot_title{
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+        .foot_items{
+            a{
+                margin: 7px 14px;
+            }
+        }
+        .foot_contacts{
+            margin: 14px 40px;
+        }
+    }
+}
+@media (min-width:510px) and (max-width: 555px){
+    header{
+        background-size: auto;
+        height: 500px;
+        div{
+            h1{
+                font-size: 20px;
+            }
+            nav{
+                .main-nav{
+                    &__item{
+                        a{
+                            font-size: 7px;
+                        }
+                    }
+                }
+            }
+        }
+        h2{
+            margin-top: 96px;
+            font-size: 50px;
+        }
+    }
+    .download{
+        &_1p{
+            text-align: center;
+        }
+        &-btn{
+            margin-top: 28px;
+        }
+    }
+    .weDo{
+        background-size: auto;
+    }
+    .howWork{
+        div{
+            margin: 25px 5px 25px 5px;
+        }
+    }
+    .joinUs{
+        &__white{
+            .main_img{
+                width: 80%;
+            }
+            .iPhone{
+                margin-left: -125px;
+                width: 20%;
+            }
+        }
+        &__blue{
+            .joinUs__blue-items{
+                p{
+                    margin: 30px 30px;
+                }
+            }
+        }
+    }
+    .pSay{
+        &__slider{
+            .comment{
+                &__text{
+                    height: 40px;
+                    width: 430px;
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        justify-content: center;
+        .foot_title{
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+        .foot_items{
+            a{
+                margin: 7px 14px;
+            }
+        }
+        .foot_contacts{
+            margin: 14px 40px;
+        }
+    }
+}
+@media (min-width: 318px) and (max-width: 510px){
+    header{
+        background-size: auto;
+        height: 500px;
+        div{
+            h1{
+                font-size: 20px;
+            }
+            nav{
+                display: none;                
+            }
+        }
+        h2{
+            margin-top: 96px;
+            font-size: 33px;
+        }
+    }
+    .download{
+        &_1p{
+            font-size: 13px;
+            text-align: center;
+        }
+        &-btn{
+            margin-top: 28px;
+        }
+    }
+    .weDo{
+        background-size: auto;
+        div{
+            width: 70%;
+        }
+    }
+    .howWork{
+        div{
+            margin: 10px 0px 10px 0px;
+        }
+    }
+    .joinUs{
+        &__white{
+            .main_img{
+                width: 80%;
+            }
+            .iPhone{
+                margin-left: -65px;
+                width: 20%;
+            }
+        }
+        &__blue{
+            .joinUs__blue-items{
+                p{
+                    margin: 30px 30px;
+                }
+            }
+        }
+    }
+    .pSay{
+        &__slider{
+            width: 75%;
+            .comment{                
+                &__text{
+                    height: 40px;
+                    width: 170px;
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        justify-content: center;
+        .foot_title{
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+        .foot_items{
+            a{
+                margin: 7px 14px;
+            }
+        }
+        .foot_contacts{
+            margin: 14px 40px;
+        }
+    }
+}
